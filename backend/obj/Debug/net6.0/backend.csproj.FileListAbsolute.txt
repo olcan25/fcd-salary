@@ -1,0 +1,290 @@
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\appsettings.json
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\backend.staticwebassets.runtime.json
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\backend.exe
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\backend.deps.json
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\backend.runtimeconfig.json
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\backend.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\backend.pdb
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.AssemblyReference.cache
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfoInputs.cache
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfo.cs
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CoreCompileInputs.cache
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\scopedcss\bundle\backend.styles.css
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\refint\backend.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.pdb
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.genruntimeconfig.cache
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\ref\backend.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Olcan Pinduk\Desktop\github\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CopyComplete
+D:\fcd-salary\backend\bin\Debug\net6.0\appsettings.Development.json
+D:\fcd-salary\backend\bin\Debug\net6.0\appsettings.json
+D:\fcd-salary\backend\bin\Debug\net6.0\backend.staticwebassets.runtime.json
+D:\fcd-salary\backend\bin\Debug\net6.0\backend.exe
+D:\fcd-salary\backend\bin\Debug\net6.0\backend.deps.json
+D:\fcd-salary\backend\bin\Debug\net6.0\backend.runtimeconfig.json
+D:\fcd-salary\backend\bin\Debug\net6.0\backend.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\backend.pdb
+D:\fcd-salary\backend\bin\Debug\net6.0\Humanizer.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.AssemblyReference.cache
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfoInputs.cache
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfo.cs
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CoreCompileInputs.cache
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.MvcApplicationPartsAssemblyInfo.cache
+D:\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.build.json
+D:\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.development.json
+D:\fcd-salary\backend\obj\Debug\net6.0\scopedcss\bundle\backend.styles.css
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CopyComplete
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.dll
+D:\fcd-salary\backend\obj\Debug\net6.0\refint\backend.dll
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.pdb
+D:\fcd-salary\backend\obj\Debug\net6.0\backend.genruntimeconfig.cache
+D:\fcd-salary\backend\obj\Debug\net6.0\ref\backend.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\appsettings.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.staticwebassets.runtime.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.exe
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.deps.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.runtimeconfig.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.pdb
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.AssemblyReference.cache
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfoInputs.cache
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfo.cs
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CoreCompileInputs.cache
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\scopedcss\bundle\backend.styles.css
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CopyComplete
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\refint\backend.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.pdb
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.genruntimeconfig.cache
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\obj\Debug\net6.0\ref\backend.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\appsettings.Development.json
+E:\fcd-salary\backend\bin\Debug\net6.0\appsettings.json
+E:\fcd-salary\backend\bin\Debug\net6.0\backend.staticwebassets.runtime.json
+E:\fcd-salary\backend\bin\Debug\net6.0\backend.exe
+E:\fcd-salary\backend\bin\Debug\net6.0\backend.deps.json
+E:\fcd-salary\backend\bin\Debug\net6.0\backend.runtimeconfig.json
+E:\fcd-salary\backend\bin\Debug\net6.0\backend.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\backend.pdb
+E:\fcd-salary\backend\bin\Debug\net6.0\Humanizer.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.AssemblyReference.cache
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfoInputs.cache
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfo.cs
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CoreCompileInputs.cache
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.MvcApplicationPartsAssemblyInfo.cache
+E:\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.build.json
+E:\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.development.json
+E:\fcd-salary\backend\obj\Debug\net6.0\scopedcss\bundle\backend.styles.css
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CopyComplete
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.dll
+E:\fcd-salary\backend\obj\Debug\net6.0\refint\backend.dll
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.pdb
+E:\fcd-salary\backend\obj\Debug\net6.0\backend.genruntimeconfig.cache
+E:\fcd-salary\backend\obj\Debug\net6.0\ref\backend.dll
+E:\fcd-salary\backend\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\appsettings.json
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.staticwebassets.runtime.json
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.exe
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.deps.json
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.runtimeconfig.json
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\backend.pdb
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Humanizer.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.AssemblyReference.cache
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfoInputs.cache
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.AssemblyInfo.cs
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CoreCompileInputs.cache
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\scopedcss\bundle\backend.styles.css
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.csproj.CopyComplete
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\refint\backend.dll
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.pdb
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.genruntimeconfig.cache
+C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\ref\backend.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\MySqlConnector.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
