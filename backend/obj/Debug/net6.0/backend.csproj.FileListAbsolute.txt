@@ -288,3 +288,8 @@ C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\backend.genruntimecon
 C:\Users\olcan\Desktop\fcd-salary\backend\obj\Debug\net6.0\ref\backend.dll
 C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\MySqlConnector.dll
 C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\publish\web.config
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\publish\backend.deps.json
+C:\Users\Olcan Pinduk\Desktop\fcd-salary\backend\bin\Debug\net6.0\publish\backend.runtimeconfig.json

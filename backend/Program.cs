@@ -9,7 +9,7 @@ using System.Text.Json;
 var builder = WebApplication.CreateBuilder(args);
 // Add services and configure the app here.
 
-builder.Services.AddDbContext<SalaryContext>(options => options.UseSqlServer("Server=DESKTOP-DMEHTN5\\SQLEXPRESS;Database=FcdSalary;Trusted_Connection=True;"));
+builder.Services.AddDbContext<SalaryContext>(options => options.UseSqlServer("Server=DESKTOP-DMEHTN5\\SQLEXPRESS;Database=FcdSalary;User Id=ocn123;Password=Olcan123456;"));
 
 //builder.Services.AddDbContext<SalaryContext>(options => options.UseMySql("server=localhost;database=FcdSalary;user=root;password=OcN510.mZo;port=3306;Connect Timeout=5;",new MySqlServerVersion(new Version(8,0,25))));
 

@@ -4,7 +4,6 @@ import SubmitButton from "../../components/Button/SubmitButton";
 import CustomInput from "../../components/Input/CustomInput";
 import { useDispatch } from "react-redux";
 import { addCompany } from "../../store/company/companySlice";
-import SuccessToast from "../../utils/toast/SuccessToast";
 import toast, { Toaster } from "react-hot-toast";
 
 const CompanyCreate = () => {
@@ -28,14 +27,13 @@ const CompanyCreate = () => {
     // } catch (error) {
     //   toast.error("Error adding company");
     // }
-    () => {
-      toast.success("Company added successfully");
-      // navigate("/companies");
-    };
+    await toast.success("Company added successfully");
+    await navigate("/companies");
   };
 
   return (
     <div className="grid grid-cols-3">
+      <Toaster />
       <form onSubmit={handleSubmit(onSubmit)}>
         <CustomInput
           register={register("name")}

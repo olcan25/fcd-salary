@@ -1,6 +1,6 @@
-import { useToaster } from "react-hot-toast/headless";
+import toast, { useToaster } from 'react-hot-toast/headless';
 
-const SuccessToast = (props) => {
+const SuccessToast = () => {
   const { toasts, handlers } = useToaster();
   const { startPause, endPause } = handlers;
 
@@ -16,6 +16,5 @@ const SuccessToast = (props) => {
     </div>
   );
 };
-
 
 export default SuccessToast;

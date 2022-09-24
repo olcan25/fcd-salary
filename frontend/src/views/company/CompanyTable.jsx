@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Table from "../../components/Table/Table";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCompanies, removeCompany } from "../../store/company/companySlice";
+import { Toaster } from "react-hot-toast";
 
 const keys = ["name", "tradeName", "uidNumber", "vatNumber"];
 const headers = ["Ad", "Ticari Ad", "UID Numarasi", "KDV Numarasi"];
@@ -26,6 +27,7 @@ const CompanyTable = () => {
         link={link}
         dispatch={removeCompany}
       />
+      <Toaster />
     </div>
   );
 };
