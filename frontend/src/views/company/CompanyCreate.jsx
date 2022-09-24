@@ -2,10 +2,14 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import SubmitButton from "../../components/Button/SubmitButton";
 import CustomInput from "../../components/Input/CustomInput";
-import appAxios from "../../utils/appAxios";
+import { useDispatch } from "react-redux";
+import { addCompany } from "../../store/company/companySlice";
+import SuccessToast from "../../utils/toast/SuccessToast";
+import toast, { Toaster } from "react-hot-toast";
 
 const CompanyCreate = () => {
   let navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const { register, handleSubmit } = useForm({
     defaultValues: {
@@ -17,13 +21,17 @@ const CompanyCreate = () => {
   });
 
   const onSubmit = async (data) => {
-    let response = await appAxios.post("/companies", data);
-    try {
-      navigate("/companies");
-    }
-    catch (error) {
-      console.log(error);
-    }
+    await dispatch(addCompany(data));
+    // try {
+    //   toast.success("Company added successfully");
+    //   navigate("/companies");
+    // } catch (error) {
+    //   toast.error("Error adding company");
+    // }
+    () => {
+      toast.success("Company added successfully");
+      // navigate("/companies");
+    };
   };
 
   return (

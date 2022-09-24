@@ -1,9 +1,17 @@
 import appAxios from "../../utils/appAxios";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import excelData from "../../utils/excel-service";
+import { useDispatch } from "react-redux";
+import { removeCompany } from "../../store/company/companySlice";
 
 const TableData = (props) => {
   let navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const newRemove = async (data) => {
+    dispatch(props.dispatch(data));
+  };
+
   const remove = async (id) => {
     const { data } = await appAxios.delete(props.link + "/" + id);
     try {
@@ -15,8 +23,6 @@ const TableData = (props) => {
 
   const excel = async (id) => {
     const { data } = await appAxios.get(props.link + "/excel/" + id);
-    // console.log(data);
-    // await appAxios.post('http://localhost:3000', data);
     excelData(data);
   };
 
@@ -40,7 +46,8 @@ const TableData = (props) => {
       <td>
         <button
           className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
-          onClick={() => remove(props.data.id)}
+        
+          onClick={() => props.dispatch? newRemove(props.data.id) : remove(props.data.id)}
         >
           Sil
         </button>

@@ -1,29 +1,28 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Table from "../../components/Table/Table";
-import appAxios from "../../utils/appAxios";
+import { fetchEmployees, removeEmployee } from "../../store/employee/employeeSlice";
+import { useDispatch, useSelector } from "react-redux";
 
-const keys = ["firstName", "lastName", "nationalId", "salary"];
-const headers = ["Ad", "Soyad", "Kosova Numarasi", "Maas"];
+const keys = ["firstName", "lastName", "nationalId"];
+const headers = ["Ad", "Soyad", "Kosova Numarasi"];
 const header = "Calisanlar";
 const link = "employees";
 
 const EmployeeTable = () => {
-  const [data, setData] = useState([]);
-  const getData = async () => {
-    const { data } = await appAxios.get(`/employees`);
-    setData(data);
-  };
+  const dispatch = useDispatch();
+  const { employees, status, error } = useSelector((state) => state.employee);
   useEffect(() => {
-    getData();
-  }, []);
+    dispatch(fetchEmployees());
+  }, [dispatch, fetchEmployees]);
 
   return (
     <Table
-      data={data}
+      data={employees}
       keys={keys}
       headers={headers}
       header={header}
       link={link}
+      dispatch={removeEmployee}
     />
   );
 };

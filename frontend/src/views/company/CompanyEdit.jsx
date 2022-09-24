@@ -3,42 +3,30 @@ import { useForm } from "react-hook-form";
 import { useParams, useNavigate } from "react-router-dom";
 import SubmitButton from "../../components/Button/SubmitButton";
 import CustomInput from "../../components/Input/CustomInput";
-import appAxios from "../../utils/appAxios";
+import { useDispatch } from "react-redux";
+import { changeCompany, fetchCompany } from "../../store/company/companySlice";
 
 const CompanyEdit = () => {
   let params = useParams();
   let navigate = useNavigate();
+  const dispatch = useDispatch();
 
-  const { register, handleSubmit, setValue } = useForm({
-    defaultValues: {
-      id: params.id,
-      name: "",
-      tradeName: "",
-      uidNumber: "",
-      vatNumber: "",
-    },
-  });
+  const { register, handleSubmit, setValue } = useForm({});
 
-  const getData = async () => {
-    const { data } = await appAxios.get(`/companies/${params.id}`);
-    setValue("name", data.name);
-    setValue("tradeName", data.tradeName);
-    setValue("uidNumber", data.uidNumber);
-    setValue("vatNumber", data.vatNumber);
+  const getCompany = async () => {
+    const data = await dispatch(fetchCompany(params.id));
+    for (const [key, value] of Object.entries(data.payload)) {
+      setValue(key, value);
+    }
   };
 
   useEffect(() => {
-    getData();
+    getCompany();
   }, []);
 
-  const onSubmit = async(data) => {
-   let response = await appAxios.put("/companies", data);
-    try{
-        navigate("/companies");
-    }
-    catch(error){
-        console.log(error);
-    }
+  const onSubmit = async (data) => {
+    await dispatch(changeCompany(data));
+    navigate("/companies");
   };
 
   return (
@@ -62,7 +50,7 @@ const CompanyEdit = () => {
         <CustomInput
           register={register("vatNumber")}
           inputName={"KDV Numarasi"}
-          type={"number"}
+          type={"text"}
         />
         <SubmitButton name={"Duzenle"} />
       </form>

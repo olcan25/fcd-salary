@@ -1,30 +1,32 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Table from "../../components/Table/Table";
-import appAxios from "../../utils/appAxios";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCompanies, removeCompany } from "../../store/company/companySlice";
 
 const keys = ["name", "tradeName", "uidNumber", "vatNumber"];
 const headers = ["Ad", "Ticari Ad", "UID Numarasi", "KDV Numarasi"];
 const header = "Sirketler";
 const link = "companies";
 
+
 const CompanyTable = () => {
-  const [data, setData] = useState([]);
-  const getData = async () => {
-    const { data } = await appAxios.get(`/companies`);
-    setData(data);
-  };
+  const dispatch = useDispatch();
+  const { companies, status, error } = useSelector((state) => state.company);
   useEffect(() => {
-    getData();
-  }, []);
+   dispatch(fetchCompanies());
+  },[dispatch,fetchCompanies]);
 
   return (
-    <Table
-      data={data}
-      keys={keys}
-      headers={headers}
-      header={header}
-      link={link}
-    />
+    <div>
+      <Table
+        data={companies}
+        keys={keys}
+        headers={headers}
+        header={header}
+        link={link}
+        dispatch={removeCompany}
+      />
+    </div>
   );
 };
 

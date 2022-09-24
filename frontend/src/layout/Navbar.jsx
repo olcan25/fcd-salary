@@ -5,9 +5,9 @@ import { useState } from "react";
 const Navbar = () => {
   const routerValues = [
     { name: "Home", path: "/" },
-    { name: "Isciler", path: "/test" },
-    { name: "Sirketler", path: "/test2" },
-    { name: "Islemler", path: "/test2" },
+    { name: "Isciler", path: "/employees" },
+    { name: "Sirketler", path: "/companies" },
+    { name: "Islemler", path: "/salaries" },
   ];
   const [routers, setRouters] = useState(routerValues);
   return (

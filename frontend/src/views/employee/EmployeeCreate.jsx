@@ -2,10 +2,12 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import SubmitButton from "../../components/Button/SubmitButton";
 import CustomInput from "../../components/Input/CustomInput";
-import appAxios from "../../utils/appAxios";
+import { useDispatch } from "react-redux";
+import { addEmployee } from "../../store/employee/employeeSlice";
 
 const EmployeeCreate = () => {
   let navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const { register, handleSubmit } = useForm({
     defaultValues: {
@@ -17,13 +19,8 @@ const EmployeeCreate = () => {
   });
 
   const onSubmit = async (data) => {
-    let response = await appAxios.post("/employees", data);
-    try {
-      navigate("/employees");
-    }
-    catch (error) {
-      console.log(error);
-    }
+    await dispatch(addEmployee(data));
+    navigate("/employees");
   };
 
   return (
@@ -43,11 +40,6 @@ const EmployeeCreate = () => {
           register={register("nationalId")}
           inputName={"Kosova Numarasi"}
           type={"text"}
-        />
-        <CustomInput
-          register={register("salary")}
-          inputName={"Maas"}
-          type={"number"}
         />
         <SubmitButton name={"Ekle"} />
       </form>

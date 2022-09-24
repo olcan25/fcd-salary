@@ -5,10 +5,11 @@ import CustomInput from "../../../components/Input/CustomInput";
 import appAxios from "../../../utils/appAxios";
 import SalaryLineUpdate from "./SalaryLineUpdate";
 import { yearOptions, monthOptions } from "../year-month-data/yeardata";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const SalaryHeadUpdate = () => {
   const params = useParams();
+  const navigate = useNavigate();
   const { register, control, setValue, handleSubmit } = useForm({
     defaultValues: {
       salaryHead: {
@@ -62,7 +63,12 @@ const SalaryHeadUpdate = () => {
 
   async function onSubmit(data) {
     let response = await appAxios.put("/salaries", data);
-    console.log(response);
+    try {
+      navigate("/salaries");
+    }
+    catch (error) {
+      console.log(error);
+    }
   }
 
   return (

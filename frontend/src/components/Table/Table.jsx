@@ -11,7 +11,7 @@ const Table = (props) => {
           <TableHead headers={props.headers} />
           <tbody>
             {props.data.map((item,index) => (
-              <TableData data={item} key={item.id} keys={props.keys} index={index} link={props.link} />
+              <TableData data={item} key={item.id} keys={props.keys} index={index} link={props.link} dispatch={props.dispatch} />
             ))}
           </tbody>
         </table>
