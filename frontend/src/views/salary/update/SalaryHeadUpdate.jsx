@@ -6,10 +6,28 @@ import appAxios from "../../../utils/appAxios";
 import SalaryLineUpdate from "./SalaryLineUpdate";
 import { yearOptions, monthOptions } from "../year-month-data/yeardata";
 import { useParams, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCompanies } from "../../../store/company/companySlice";
+import {
+  changeSalary,
+  fetchSalaryByHeadId,
+} from "../../../store/salary/salarySlice";
+import { Toaster } from "react-hot-toast";
 
 const SalaryHeadUpdate = () => {
   const params = useParams();
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const salary = useSelector((state) => state.salary.salary);
+
+  const companies = useSelector((state) =>
+    state.company.companies.map((item) => ({
+      value: item.id,
+      label: `${item.name}  ${item.tradeName}  ${item.uidNumber}  ${item.vatNumber}`,
+    }))
+  );
+
   const { register, control, setValue, handleSubmit } = useForm({
     defaultValues: {
       salaryHead: {
@@ -34,41 +52,22 @@ const SalaryHeadUpdate = () => {
     control,
     name: "salaryLines",
   });
-  const [options, setOptions] = useState([]);
-  const [salary, setSalary] = useState([]);
-
-  const getCompanies = async () => {
-    const response = await appAxios.get("/companies");
-    return response.data.map((item) => {
-      return {
-        value: item.id,
-        label: `${item.name}  ${item.tradeName}  ${item.uidNumber}  ${item.vatNumber}`,
-      };
-    });
-  };
-
-  const getSalary = async () => {
-    const { data } = await appAxios.get(`/salaries/update/${params.id}`);
-    const { salaryLines, company, ...salaryHead } = data;
-    setValue("salaryHead", salaryHead);
-    setValue("salaryLines", salaryLines);
-  };
+  useEffect(() => {
+    dispatch(fetchSalaryByHeadId(params.id));
+    dispatch(fetchCompanies());
+  }, [dispatch]);
 
   useEffect(() => {
-    getSalary();
-    getCompanies().then((data) => {
-      setOptions(data);
-    });
-  }, []);
+    const { salaryLines, company, ...salaryHead } = salary;
+    setValue("salaryHead", salaryHead);
+    setValue("salaryLines", salaryLines);
+  }, [salary]);
 
   async function onSubmit(data) {
-    let response = await appAxios.put("/salaries", data);
-    try {
+    await dispatch(changeSalary(data));
+    setTimeout(() => {
       navigate("/salaries");
-    }
-    catch (error) {
-      console.log(error);
-    }
+    }, 2000);
   }
 
   return (
@@ -78,7 +77,7 @@ const SalaryHeadUpdate = () => {
           <CustomSelect
             register={register("salaryHead.companyId")}
             inputName={"Sirket Ismi"}
-            options={options}
+            options={companies}
           />
 
           <div className="grid grid-cols-2">
@@ -103,7 +102,9 @@ const SalaryHeadUpdate = () => {
         register={register}
         setValue={setValue}
       />
+          <Toaster />
     </form>
+
   );
 };
 

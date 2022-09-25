@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import appAxios from "../../utils/appAxios";
 import Table from "../../components/Table/Table";
 import ReactDatePicket from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -9,6 +8,7 @@ import {
   fetchSalaries,
   fetchSalariesByCompanyId,
   fetchSalariesByDate,
+  removeSalary,
 } from "../../store/salary/salarySlice";
 
 const SalaryTable = () => {
@@ -42,28 +42,10 @@ const SalaryTable = () => {
   const dispatch = useDispatch();
   const { salaries, status, error } = useSelector((state) => state.salary);
   const { companies } = useSelector((state) => state.company);
-
-  const [data, setData] = useState([]);
   const [date, setDate] = useState(new Date());
-  // const getSalary = async () => {
-  //   const { data } = await appAxios.get("/salaries");
-  //   setData(data);
-  // };
-
-  // const getCompanies = async () => {
-  //   const { data } = await appAxios.get("/companies");
-  //   setCompanies(data);
-  // };
-
-  // const getSalariesByCompanyId = async (id) => {
-  //   const { data } = await appAxios.get("/salaries/companies/" + id);
-  //   setData(data);
-  // };
 
   const getSalariesByDate = async (date) => {
     setDate(date);
-    // const {data} = await appAxios.get('/salaries',{params:{month:date.getMonth() + 1, year:date.getFullYear()}});
-    // setData(data);
     await dispatch(
       fetchSalariesByDate({
         month: date.getMonth() + 1,
@@ -73,11 +55,9 @@ const SalaryTable = () => {
   };
 
   useEffect(() => {
-    // getCompanies();
-    // getSalary();
     dispatch(fetchCompanies());
     dispatch(fetchSalaries());
-  }, [dispatch, fetchCompanies, fetchSalaries]);
+  }, [dispatch]);
 
   return (
     <div>
@@ -109,6 +89,7 @@ const SalaryTable = () => {
         headers={headers}
         header={header}
         link={link}
+        dispatch={removeSalary}
       />
     </div>
   );

@@ -1,14 +1,24 @@
 import { useEffect, useState } from "react";
 import { useForm, useFieldArray, useWatch } from "react-hook-form";
 import CustomSelect from "../../../components/Input/CustomSelect";
-import CustomInput from "../../../components/Input/CustomInput";
 import appAxios from "../../../utils/appAxios";
 import SalaryLineCreate from "./SalaryLineCreate";
 import { yearOptions, monthOptions } from "../year-month-data/yeardata";
 import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCompanies } from "../../../store/company/companySlice";
+import { addSalary } from "../../../store/salary/salarySlice";
+import { Toaster } from "react-hot-toast";
 
 const SalaryHeadCreate = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const companies = useSelector((state) =>
+    state.company.companies.map((item) => ({
+      value: item.id,
+      label: `${item.name}  ${item.tradeName}  ${item.uidNumber}  ${item.vatNumber}`,
+    }))
+  );
   const { register, control, setValue, handleSubmit } = useForm({
     defaultValues: {
       salaryHead: {
@@ -33,32 +43,16 @@ const SalaryHeadCreate = () => {
     control,
     name: "salaryLines",
   });
-  const [options, setOptions] = useState([]);
-
-  const getCompanies = async () => {
-    const response = await appAxios.get("/companies");
-    return response.data.map((item) => {
-      return {
-        value: item.id,
-        label: `${item.name}  ${item.tradeName}  ${item.uidNumber}  ${item.vatNumber}`,
-      };
-    });
-  };
 
   useEffect(() => {
-    getCompanies().then((data) => {
-      setOptions(data);
-    });
-  }, []);
+    dispatch(fetchCompanies());
+  }, [dispatch]);
 
   async function onSubmit(data) {
-    let response = await appAxios.post("/salaries", data);
-    try{
+    await dispatch(addSalary(data));
+    setTimeout(() => {
       navigate("/salaries");
-    }
-    catch(error){
-      console.log(error);
-    }
+    }, 2000);
   }
 
   return (
@@ -68,19 +62,19 @@ const SalaryHeadCreate = () => {
           <CustomSelect
             register={register("salaryHead.companyId")}
             inputName={"Sirket Ismi"}
-            options={options}
+            options={companies}
           />
           <div className="grid grid-cols-2">
-          <CustomSelect
-            register={register("salaryHead.month")}
-            inputName={"Ay"}
-            options={monthOptions}
-          />
-          <CustomSelect
-            register={register("salaryHead.year")}
-            inputName={"Yil"}
-            options={yearOptions}
-          />
+            <CustomSelect
+              register={register("salaryHead.month")}
+              inputName={"Ay"}
+              options={monthOptions}
+            />
+            <CustomSelect
+              register={register("salaryHead.year")}
+              inputName={"Yil"}
+              options={yearOptions}
+            />
           </div>
         </div>
       </div>
@@ -92,9 +86,9 @@ const SalaryHeadCreate = () => {
         register={register}
         setValue={setValue}
       />
+      <Toaster />
     </form>
   );
 };
 
 export default SalaryHeadCreate;
-

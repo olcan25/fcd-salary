@@ -15,7 +15,7 @@ const CompanyTable = () => {
   const { companies, status, error } = useSelector((state) => state.company);
   useEffect(() => {
    dispatch(fetchCompanies());
-  },[dispatch,fetchCompanies]);
+  },[dispatch]);
 
   return (
     <div>

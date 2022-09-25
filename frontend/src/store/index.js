@@ -9,4 +9,5 @@ export const store = configureStore({
     employee: employeeReducer,
     salary: salaryReducer,
   },
+  devTools:true
 })

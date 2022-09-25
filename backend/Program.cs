@@ -143,12 +143,12 @@ app.MapGet("/salaries", ([FromServices] SalaryContext context, [FromQuery] strin
     : JsonSerializer.Serialize(result.Where(x => x.Month == month && x.Year == year).ToList(), options);
 });
 
-app.MapGet("/salaries/{id}", ([FromServices] SalaryContext context, int id, [FromQuery] string month, [FromQuery] string year) =>
+//byHeadId firstordefealt
+app.MapGet("/salaries/{id}", ([FromServices] SalaryContext context, int id) =>
 {
     var result = from head in context.SalaryHeads
                  join company in context.Companies on head.CompanyId equals company.Id
                  join line in context.SalaryLines on head.Id equals line.SalaryHeadId
-                 where head.Id == id
                  group new { head, company, line } by new { head.Id, head.CompanyId, head.Month, head.Year, company.Name } into g
                  select new
                  {
@@ -167,12 +167,10 @@ app.MapGet("/salaries/{id}", ([FromServices] SalaryContext context, int id, [Fro
                      TotalSalary = g.Sum(x => x.line.GrossSalary + x.line.EmployeeContribute)
                  };
 
-
-    return month == null && year == null
-    ? JsonSerializer.Serialize(result.ToList(), options)
-    : JsonSerializer.Serialize(result.Where(x => x.Month == month && x.Year == year).ToList(), options);
+    return JsonSerializer.Serialize(result.FirstOrDefault(x => x.Id == id), options);
 });
 
+//byCompanyId to list
 app.MapGet("/salaries/companies/{id}", ([FromServices] SalaryContext context, int id, [FromQuery] string month, [FromQuery] string year) =>
 {
     var result = from head in context.SalaryHeads
@@ -209,7 +207,30 @@ app.MapPost("/salaries", ([FromServices] SalaryContext context, SalaryModel mode
     model.SalaryLines.ForEach(x => x.SalaryHeadId = model.SalaryHead.Id);
     context.SalaryLines.AddRange(model.SalaryLines);
     context.SaveChanges();
-    return Results.Ok("Added");
+
+    var result = from head in context.SalaryHeads
+                 join company in context.Companies on head.CompanyId equals company.Id
+                 join line in context.SalaryLines on head.Id equals line.SalaryHeadId
+                 group new { head, company, line } by new { head.Id, head.CompanyId, head.Month, head.Year, company.Name } into g
+                 select new
+                 {
+                     Id = g.Key.Id,
+                     CompanyId = g.Key.CompanyId,
+                     Month = g.Key.Month,
+                     Year = g.Key.Year,
+                     CompanyName = g.Key.Name,
+                     EmployeeCount = g.Count(),
+                     TotalNetSalary = g.Sum(x => x.line.NetSalary),
+                     TotalGrossSalary = g.Sum(x => x.line.GrossSalary),
+                     TotalTaxSalary = g.Sum(x => x.line.TaxSalary),
+                     TotalEmployeeContribute = g.Sum(x => x.line.EmployeeContribute),
+                     TotalEmployerContribute = g.Sum(x => x.line.EmployerContribute),
+                     TotalContribute = g.Sum(x => x.line.EmployeeContribute + x.line.EmployerContribute),
+                     TotalSalary = g.Sum(x => x.line.GrossSalary + x.line.EmployeeContribute)
+                 };
+
+
+    return JsonSerializer.Serialize(result.FirstOrDefault(x => x.Id == model.SalaryHead.Id), options);
 });
 
 app.MapDelete("/salaries/{id}", ([FromServices] SalaryContext context, int id) =>
@@ -231,7 +252,30 @@ app.MapPut("/salaries", ([FromServices] SalaryContext context, SalaryModel model
     model.SalaryLines.ForEach(x => { x.SalaryHeadId = model.SalaryHead.Id; x.Id = 0; });
     context.SalaryLines.AddRange(model.SalaryLines);
     context.SaveChanges();
-    return Results.Ok("Updated");
+
+    var result = from head in context.SalaryHeads
+                 join company in context.Companies on head.CompanyId equals company.Id
+                 join line in context.SalaryLines on head.Id equals line.SalaryHeadId
+                 group new { head, company, line } by new { head.Id, head.CompanyId, head.Month, head.Year, company.Name } into g
+                 select new
+                 {
+                     Id = g.Key.Id,
+                     CompanyId = g.Key.CompanyId,
+                     Month = g.Key.Month,
+                     Year = g.Key.Year,
+                     CompanyName = g.Key.Name,
+                     EmployeeCount = g.Count(),
+                     TotalNetSalary = g.Sum(x => x.line.NetSalary),
+                     TotalGrossSalary = g.Sum(x => x.line.GrossSalary),
+                     TotalTaxSalary = g.Sum(x => x.line.TaxSalary),
+                     TotalEmployeeContribute = g.Sum(x => x.line.EmployeeContribute),
+                     TotalEmployerContribute = g.Sum(x => x.line.EmployerContribute),
+                     TotalContribute = g.Sum(x => x.line.EmployeeContribute + x.line.EmployerContribute),
+                     TotalSalary = g.Sum(x => x.line.GrossSalary + x.line.EmployeeContribute)
+                 };
+
+
+    return JsonSerializer.Serialize(result.FirstOrDefault(x => x.Id == model.SalaryHead.Id), options);
 });
 
 

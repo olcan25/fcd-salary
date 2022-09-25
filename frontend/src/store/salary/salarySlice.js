@@ -2,7 +2,10 @@ import {
   getSalaries,
   getSalariesByCompanyId,
   getSalariesByDate,
-    getSalaryByHeadId,
+  getSalaryByHeadId,
+  createSalary,
+  updateSalary,
+  deleteSalary,
 } from "../../utils/services/salary";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { toast } from "react-hot-toast";
@@ -44,15 +47,54 @@ export const fetchSalariesByDate = createAsyncThunk(
 );
 
 export const fetchSalaryByHeadId = createAsyncThunk(
-    "salary/fetchSalaryByHeadId",
-    async (headId) => {
-        try {
-            const salary = await getSalaryByHeadId(headId);
-            return salary;
-        } catch (err) {
-            toast.error("Error fetching salary");
-        }
+  "salary/fetchSalaryByHeadId",
+  async (headId) => {
+    try {
+      const salary = await getSalaryByHeadId(headId);
+      return salary;
+    } catch (err) {
+      toast.error("Error fetching salary");
     }
+  }
+);
+
+export const addSalary = createAsyncThunk(
+  "salary/addSalary",
+  async (salary) => {
+    try {
+      const newSalary = await createSalary(salary);
+      toast.success("Salary added successfully");
+      return newSalary;
+    } catch (err) {
+      toast.error("Error adding salary");
+    }
+  }
+);
+
+export const changeSalary = createAsyncThunk(
+  "salary/changeSalary",
+  async (salary) => {
+    try {
+      const updatedSalary = await updateSalary(salary);
+      toast.success("Salary updated successfully");
+      return updateSalary;
+    } catch (err) {
+      toast.error("Error updating salary");
+    }
+  }
+);
+
+export const removeSalary = createAsyncThunk(
+  "salary/removeSalary",
+  async (id) => {
+    try {
+      const deletedSalary = await deleteSalary(id);
+      toast.success("Salary deleted successfully");
+      return id;
+    } catch (err) {
+      toast.error("Error deleting salary");
+    }
+  }
 );
 
 export const salarySlice = createSlice({
@@ -99,15 +141,52 @@ export const salarySlice = createSlice({
       state.error = action.error.message;
     },
     [fetchSalaryByHeadId.pending]: (state) => {
-        state.status = "loading";
+      state.status = "loading";
     },
     [fetchSalaryByHeadId.fulfilled]: (state, action) => {
-        state.status = "succeeded";
-        state.salary = action.payload;
+      state.status = "succeeded";
+      state.salary = { ...action.payload };
     },
     [fetchSalaryByHeadId.rejected]: (state, action) => {
-        state.status = "failed";
-        state.error = action.error.message;
+      state.status = "failed";
+      state.error = action.error.message;
+    },
+    [addSalary.pending]: (state) => {
+      state.status = "loading";
+    },
+    [addSalary.fulfilled]: (state, action) => {
+      state.status = "succeeded";
+      state.salaries = [...state.salaries, action.payload];
+    },
+    [addSalary.rejected]: (state, action) => {
+      state.status = "failed";
+      state.error = action.error.message;
+    },
+    [changeSalary.pending]: (state) => {
+      state.status = "loading";
+    },
+    [changeSalary.fulfilled]: (state, action) => {
+      state.status = "succeeded";
+      state.salaries = state.salaries.map((salary) =>
+        salary.id === action.payload.id ? action.payload : salary
+      );
+    },
+    [changeSalary.rejected]: (state, action) => {
+      state.status = "failed";
+      state.error = action.error.message;
+    },
+    [removeSalary.pending]: (state) => {
+      state.status = "loading";
+    },
+    [removeSalary.fulfilled]: (state, action) => {
+      state.status = "succeeded";
+      state.salaries = state.salaries.filter(
+        (salary) => salary.id !== action.payload
+      );
+    },
+    [removeSalary.rejected]: (state, action) => {
+      state.status = "failed";
+      state.error = action.error.message;
     },
   },
 });
