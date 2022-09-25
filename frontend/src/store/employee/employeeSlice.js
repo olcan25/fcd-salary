@@ -6,44 +6,72 @@ import {
     deleteEmployee,
     updateEmployee,
 } from "../../utils/services/employee";
+import { toast } from 'react-hot-toast';
 
 export const fetchEmployees = createAsyncThunk(
     "employee/fetchEmployees",
     async () => {
-        const employees = await getEmployees();
-        return employees;
+        try{
+            const employees = await getEmployees();
+            return employees
+        }catch(err){
+            toast.error('Error fetching employees');
+        }
     }
 );
 
 export const fetchEmployee = createAsyncThunk(
     "employee/fetchEmployee",
     async (id) => {
-        const employee = await getEmployee(id);
-        return employee;
+        try{
+            const employee = await getEmployee(id);
+            return employee;
+        }
+        catch(err){
+            toast.error('Error fetching employee');
+        }
     }
 );
 
 export const addEmployee = createAsyncThunk(
     "employee/addEmployee",
     async (employee) => {
-        const newEmployee = await createEmployee(employee);
-        return newEmployee;
+        try{
+            const newEmployee = await createEmployee(employee);
+            toast.success('Employee added successfully');
+            return newEmployee;
+        }
+        catch(err){
+            toast.error('Error adding employee');
+        }
     }
 );
 
 export const removeEmployee = createAsyncThunk(
     "employee/removeEmployee",
     async (id) => {
-        await deleteEmployee(id);
-        return id;
+        try{
+            await deleteEmployee(id);
+            toast.success('Employee deleted successfully');
+            return id;
+        }
+        catch(err){
+            toast.error('Error deleting employee');
+        }
     }
 );
 
 export const changeEmployee = createAsyncThunk(
     "employee/changeEmployee",
     async (employee) => {
-        const changedEmployee = await updateEmployee(employee);
-        return changedEmployee;
+        try{
+            const updatedEmployee = await updateEmployee(employee);
+            toast.success('Employee updated successfully');
+            return updatedEmployee;
+        }
+        catch(err){
+            toast.error('Error updating employee');
+        }
     }
 );
 

@@ -21,14 +21,9 @@ const CompanyCreate = () => {
 
   const onSubmit = async (data) => {
     await dispatch(addCompany(data));
-    // try {
-    //   toast.success("Company added successfully");
-    //   navigate("/companies");
-    // } catch (error) {
-    //   toast.error("Error adding company");
-    // }
-    await toast.success("Company added successfully");
-    await navigate("/companies");
+    setTimeout(() => {
+      navigate("/companies");
+    }, 2000);
   };
 
   return (

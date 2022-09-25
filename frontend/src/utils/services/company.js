@@ -1,7 +1,7 @@
 import appAxios from "../appAxios";
 
 export const getCompanies = async () => {
-  const { data } = await appAxios.get("/companies");
+  const {data} = await appAxios.get("/companies");
   return data;
 };
 

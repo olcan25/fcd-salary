@@ -5,6 +5,7 @@ import SubmitButton from "../../components/Button/SubmitButton";
 import CustomInput from "../../components/Input/CustomInput";
 import { useDispatch } from "react-redux";
 import { changeCompany, fetchCompany } from "../../store/company/companySlice";
+import { Toaster } from "react-hot-toast";
 
 const CompanyEdit = () => {
   let params = useParams();
@@ -26,11 +27,14 @@ const CompanyEdit = () => {
 
   const onSubmit = async (data) => {
     await dispatch(changeCompany(data));
-    navigate("/companies");
+    setTimeout(() => {
+      navigate("/companies");
+    }, 2000);
   };
 
   return (
     <div className="grid grid-cols-3">
+      <Toaster />
       <form onSubmit={handleSubmit(onSubmit)}>
         <CustomInput
           register={register("name")}

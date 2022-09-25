@@ -1,8 +1,15 @@
 import { useEffect, useState } from "react";
 import appAxios from "../../utils/appAxios";
 import Table from "../../components/Table/Table";
-import ReactDatePicket from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import ReactDatePicket from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchCompanies } from "../../store/company/companySlice";
+import {
+  fetchSalaries,
+  fetchSalariesByCompanyId,
+  fetchSalariesByDate,
+} from "../../store/salary/salarySlice";
 
 const SalaryTable = () => {
   const keys = [
@@ -31,40 +38,52 @@ const SalaryTable = () => {
   ];
   const header = "Maaşlar Listesi";
   const link = "salaries";
+
+  const dispatch = useDispatch();
+  const { salaries, status, error } = useSelector((state) => state.salary);
+  const { companies } = useSelector((state) => state.company);
+
   const [data, setData] = useState([]);
-  const [companies, setCompanies] = useState([]);
   const [date, setDate] = useState(new Date());
-  const getSalary = async () => {
-    const { data } = await appAxios.get("/salaries");
-    setData(data);
-  };
+  // const getSalary = async () => {
+  //   const { data } = await appAxios.get("/salaries");
+  //   setData(data);
+  // };
 
-  const getCompanies = async () => {
-    const { data } = await appAxios.get("/companies");
-    setCompanies(data);
-  };
+  // const getCompanies = async () => {
+  //   const { data } = await appAxios.get("/companies");
+  //   setCompanies(data);
+  // };
 
-  const getSalariesByCompanyId = async (id) => {
-    const { data } = await appAxios.get("/salaries/companies/" + id);
-    setData(data);
-  };
+  // const getSalariesByCompanyId = async (id) => {
+  //   const { data } = await appAxios.get("/salaries/companies/" + id);
+  //   setData(data);
+  // };
 
   const getSalariesByDate = async (date) => {
     setDate(date);
-    const {data} = await appAxios.get('/salaries',{params:{month:date.getMonth() + 1, year:date.getFullYear()}});
-    setData(data);
+    // const {data} = await appAxios.get('/salaries',{params:{month:date.getMonth() + 1, year:date.getFullYear()}});
+    // setData(data);
+    await dispatch(
+      fetchSalariesByDate({
+        month: date.getMonth() + 1,
+        year: date.getFullYear(),
+      })
+    );
   };
 
   useEffect(() => {
-    getCompanies();
-    getSalary();
-  }, []);
+    // getCompanies();
+    // getSalary();
+    dispatch(fetchCompanies());
+    dispatch(fetchSalaries());
+  }, [dispatch, fetchCompanies, fetchSalaries]);
 
   return (
     <div>
       <div className="grid grid-cols-4 gap-4">
         <select
-          onChange={(e) => getSalariesByCompanyId(e.target.value)}
+          onChange={(e) => dispatch(fetchSalariesByCompanyId(e.target.value))}
           className="bg-gray-50 border border-gray-300 text-gray-900 text-2xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         >
           <option value="0">Şirket Seçiniz</option>
@@ -80,12 +99,12 @@ const SalaryTable = () => {
           placeholderText="Tarih Secin"
           dateFormat="MM/yyyy"
           showMonthYearPicker
-          onChange={(date) =>getSalariesByDate(date)}
+          onChange={(date) => getSalariesByDate(date)}
           selected={date}
         />
       </div>
       <Table
-        data={data}
+        data={salaries}
         keys={keys}
         headers={headers}
         header={header}

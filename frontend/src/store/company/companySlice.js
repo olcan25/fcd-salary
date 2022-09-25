@@ -6,12 +6,18 @@ import {
   deleteCompany,
   updateCompany,
 } from "../../utils/services/company";
+import { toast } from "react-hot-toast";
+
 
 export const fetchCompanies = createAsyncThunk(
   "company/fetchCompanies",
   async () => {
-    const companies = await getCompanies();
-    return companies;
+    try{
+      const companies = await getCompanies();
+      return companies
+    }catch(err){
+      toast.error('Error fetching companies');
+    }
   }
 );
 
@@ -26,23 +32,39 @@ export const fetchCompany = createAsyncThunk(
 export const addCompany = createAsyncThunk(
   "company/addCompany",
   async (company) => {
-    const newCompany = await createCompany(company);
-    return newCompany;
+    try{
+      const newCompany = await createCompany(company);
+      toast.success('Company added successfully');
+      return newCompany;
+
+    }catch(err){
+      toast.error('Error adding company');
+    }
   }
 );
 
 export const removeCompany = createAsyncThunk(
   "company/removeCompany",
   async (id) => {
-    await deleteCompany(id);
-    return id;
+    try{
+      await deleteCompany(id);
+      toast.success('Company deleted successfully');
+      return id;
+    }catch(err){
+      toast.error('Error deleting company');
+    }
   }
 );
 export const changeCompany = createAsyncThunk(
   "company/changeCompany",
   async (company) => {
-    const changedCompany = await updateCompany(company);
-    return changedCompany;
+    try{
+      const updatedCompany = await updateCompany(company);
+      toast.success('Company updated successfully');
+      return updatedCompany;
+    }catch(err){
+      toast.error('Error updating company');
+    }
   }
 );
 
@@ -119,5 +141,3 @@ const companySlice = createSlice({
 });
 
 export default companySlice.reducer;
-
-
