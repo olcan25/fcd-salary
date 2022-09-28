@@ -50,9 +50,7 @@ const SalaryHeadCreate = () => {
 
   async function onSubmit(data) {
     await dispatch(addSalary(data));
-    setTimeout(() => {
       navigate("/salaries");
-    }, 2000);
   }
 
   return (

@@ -27,9 +27,7 @@ const CompanyEdit = () => {
 
   const onSubmit = async (data) => {
     await dispatch(changeCompany(data));
-    setTimeout(() => {
       navigate("/companies");
-    }, 2000);
   };
 
   return (

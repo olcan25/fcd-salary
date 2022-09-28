@@ -65,9 +65,7 @@ const SalaryHeadUpdate = () => {
 
   async function onSubmit(data) {
     await dispatch(changeSalary(data));
-    setTimeout(() => {
       navigate("/salaries");
-    }, 2000);
   }
 
   return (

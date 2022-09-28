@@ -6,7 +6,7 @@ import {
   deleteCompany,
   updateCompany,
 } from "../../utils/services/company";
-import { toast } from "react-hot-toast";
+import { toast } from "react-toastify";
 
 
 export const fetchCompanies = createAsyncThunk(
@@ -16,7 +16,7 @@ export const fetchCompanies = createAsyncThunk(
       const companies = await getCompanies();
       return companies
     }catch(err){
-      toast.error('Error fetching companies');
+      toast.error('Hata oluştu');
     }
   }
 );
@@ -24,8 +24,12 @@ export const fetchCompanies = createAsyncThunk(
 export const fetchCompany = createAsyncThunk(
   "company/fetchCompany",
   async (id) => {
-    const company = await getCompany(id);
-    return company;
+    try{
+      const company = await getCompany(id);
+      return company;
+    }catch(err){
+      toast.error('Hata oluştu');
+    }
   }
 );
 
@@ -34,11 +38,11 @@ export const addCompany = createAsyncThunk(
   async (company) => {
     try{
       const newCompany = await createCompany(company);
-      toast.success('Company added successfully');
+      toast.success('Firma başarıyla eklendi');
       return newCompany;
 
     }catch(err){
-      toast.error('Error adding company');
+      toast.error('Hata oluştu');
     }
   }
 );
@@ -48,10 +52,10 @@ export const removeCompany = createAsyncThunk(
   async (id) => {
     try{
       await deleteCompany(id);
-      toast.success('Company deleted successfully');
+      toast.success('Firma başarıyla silindi');
       return id;
     }catch(err){
-      toast.error('Error deleting company');
+      toast.error('Hata oluştu');
     }
   }
 );
@@ -60,10 +64,10 @@ export const changeCompany = createAsyncThunk(
   async (company) => {
     try{
       const updatedCompany = await updateCompany(company);
-      toast.success('Company updated successfully');
+      toast.success('Firma başarıyla güncellendi');
       return updatedCompany;
     }catch(err){
-      toast.error('Error updating company');
+      toast.error('Hata oluştu');
     }
   }
 );

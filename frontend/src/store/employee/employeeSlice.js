@@ -6,7 +6,7 @@ import {
     deleteEmployee,
     updateEmployee,
 } from "../../utils/services/employee";
-import { toast } from 'react-hot-toast';
+import { toast } from "react-toastify";
 
 export const fetchEmployees = createAsyncThunk(
     "employee/fetchEmployees",
@@ -15,7 +15,7 @@ export const fetchEmployees = createAsyncThunk(
             const employees = await getEmployees();
             return employees
         }catch(err){
-            toast.error('Error fetching employees');
+            toast.error('Hata oluştu');
         }
     }
 );
@@ -28,7 +28,7 @@ export const fetchEmployee = createAsyncThunk(
             return employee;
         }
         catch(err){
-            toast.error('Error fetching employee');
+            toast.error('Hata oluştu');
         }
     }
 );
@@ -38,11 +38,11 @@ export const addEmployee = createAsyncThunk(
     async (employee) => {
         try{
             const newEmployee = await createEmployee(employee);
-            toast.success('Employee added successfully');
+            toast.success('Çalışan başarıyla eklendi');
             return newEmployee;
         }
         catch(err){
-            toast.error('Error adding employee');
+            toast.error('Hata oluştu');
         }
     }
 );
@@ -52,11 +52,11 @@ export const removeEmployee = createAsyncThunk(
     async (id) => {
         try{
             await deleteEmployee(id);
-            toast.success('Employee deleted successfully');
+            toast.success('Çalışan başarıyla silindi');
             return id;
         }
         catch(err){
-            toast.error('Error deleting employee');
+            toast.error('Hata oluştu');
         }
     }
 );
@@ -66,11 +66,11 @@ export const changeEmployee = createAsyncThunk(
     async (employee) => {
         try{
             const updatedEmployee = await updateEmployee(employee);
-            toast.success('Employee updated successfully');
+            toast.success('Çalışan başarıyla güncellendi');
             return updatedEmployee;
         }
         catch(err){
-            toast.error('Error updating employee');
+            toast.error('Hata oluştu');
         }
     }
 );

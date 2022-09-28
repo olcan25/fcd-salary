@@ -21,9 +21,7 @@ const CompanyCreate = () => {
 
   const onSubmit = async (data) => {
     await dispatch(addCompany(data));
-    setTimeout(() => {
-      navigate("/companies");
-    }, 2000);
+    navigate("/companies");
   };
 
   return (

@@ -8,7 +8,7 @@ import {
   deleteSalary,
 } from "../../utils/services/salary";
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { toast } from "react-hot-toast";
+import { toast } from "react-toastify";
 
 export const fetchSalaries = createAsyncThunk(
   "salary/fetchSalaries",
@@ -17,7 +17,7 @@ export const fetchSalaries = createAsyncThunk(
       const salaries = await getSalaries();
       return salaries;
     } catch (err) {
-      toast.error("Error fetching salaries");
+      toast.error("Hata oluştu");
     }
   }
 );
@@ -29,7 +29,7 @@ export const fetchSalariesByCompanyId = createAsyncThunk(
       const salaries = await getSalariesByCompanyId(companyId);
       return salaries;
     } catch (err) {
-      toast.error("Error fetching salaries");
+      toast.error("Hata oluştu");
     }
   }
 );
@@ -41,7 +41,7 @@ export const fetchSalariesByDate = createAsyncThunk(
       const salaries = await getSalariesByDate(date);
       return salaries;
     } catch (err) {
-      toast.error("Error fetching salaries");
+      toast.error("Hata oluştu");
     }
   }
 );
@@ -53,7 +53,7 @@ export const fetchSalaryByHeadId = createAsyncThunk(
       const salary = await getSalaryByHeadId(headId);
       return salary;
     } catch (err) {
-      toast.error("Error fetching salary");
+      toast.error("Hata oluştu");
     }
   }
 );
@@ -63,10 +63,10 @@ export const addSalary = createAsyncThunk(
   async (salary) => {
     try {
       const newSalary = await createSalary(salary);
-      toast.success("Salary added successfully");
+      toast.success("Maaş başarıyla eklendi");
       return newSalary;
     } catch (err) {
-      toast.error("Error adding salary");
+      toast.error("Hata oluştu");
     }
   }
 );
@@ -76,10 +76,10 @@ export const changeSalary = createAsyncThunk(
   async (salary) => {
     try {
       const updatedSalary = await updateSalary(salary);
-      toast.success("Salary updated successfully");
+      toast.success("Maaş başarıyla güncellendi");
       return updateSalary;
     } catch (err) {
-      toast.error("Error updating salary");
+      toast.error("Hata oluştu");
     }
   }
 );
@@ -89,10 +89,10 @@ export const removeSalary = createAsyncThunk(
   async (id) => {
     try {
       const deletedSalary = await deleteSalary(id);
-      toast.success("Salary deleted successfully");
+      toast.success("Maaş başarıyla silindi");
       return id;
     } catch (err) {
-      toast.error("Error deleting salary");
+      toast.error("Hata oluştu");
     }
   }
 );
